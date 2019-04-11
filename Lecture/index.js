@@ -104,6 +104,7 @@ app.get("/success", (req, res) => {
       throw error;
     } else {
       // store payment info to my database as the receipt
+      console.log("payment");
       console.dir(payment, { depth: null });
       res.send("Success");
     }
